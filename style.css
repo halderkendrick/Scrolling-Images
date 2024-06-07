@@ -1,0 +1,49 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+  }
+
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: lightblue;
+    color: aliceblue;
+  }
+  
+  img{
+    width: 75%;
+    height: 75%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  }
+  .card{
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+    margin: 1rem;
+    padding: 1rem;
+    transition: all 2s ease;
+  }
+
+  h2{
+    margin: 1rem;
+  }
+
+  .card:nth-child(even){
+    transform: translateX(-200%) rotate(90deg) scale(0.1);
+  }
+
+  .card:nth-child(odd){
+    transform: translateX(-200%) rotate(90deg) scale(0.1);
+  }
+
+  .card.slidingIn{
+    transform: translateX(0) rotate(0deg) scale(1);
+  }
